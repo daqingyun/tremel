@@ -1,0 +1,16 @@
+mysql> load data local infile "~/tremel/Data/data/stemmed/SCORE.TXT" into table stem_score;  
+Query OK, 2861 rows affected (0.18 sec)  
+Records: 2861  Deleted: 0  Skipped: 0  Warnings: 0  
+  
+mysql> load data local infile "~/tremel/Data/data/stemmed/GENESEQ.TXT  
+" into table stem_gene;  
+Query OK, 2861 rows affected (0.24 sec)  
+Records: 2861  Deleted: 0  Skipped: 0  Warnings: 0  
+  
+mysql> load data local infile "~/tremel/Data/data/unstemmed/GENESEQ.TXT" into table unstem_gene;  
+Query OK, 2861 rows affected (0.42 sec)  
+Records: 2861  Deleted: 0  Skipped: 0  Warnings: 0  
+  
+mysql> load data local infile "~/tremel/Data/data/unstemmed/SCORE.TXT" into table unstem_score;  
+Query OK, 2861 rows affected (0.23 sec)  
+Records: 2861  Deleted: 0  Skipped: 0  Warnings: 0 
