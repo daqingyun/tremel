@@ -1,0 +1,8 @@
+mysql> insert into stem_data select stem_gene.index, stem_gene.kvalue, stem_gene.cluster_no, stem_gene.genes, stem_score.g_scores, stem_gene.terms, stem_score.t_scores, stem_gene.tfs, stem_score.tf_scores from stem_gene, stem_score where st  
+em_gene.index=stem_score.index;  
+Query OK, 2861 rows affected (0.33 sec)  
+Records: 2861  Duplicates: 0  Warnings: 0  
+  
+mysql> insert into unstem_data select unstem_gene.index, unstem_gene.kvalue, unstem_gene.cluster_no, unstem_gene.genes, unstem_score.g_scores, unstem_gene.terms, unstem_score.t_scores, unstem_gene.tfs, unstem_score.tf_scores from unstem_gene, unstem_score where unstem_gene.index=unstem_score.index;  
+Query OK, 2861 rows affected (0.56 sec)  
+Records: 2861  Duplicates: 0  Warnings: 0 
